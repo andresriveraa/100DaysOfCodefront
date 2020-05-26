@@ -1,0 +1,13 @@
+proyecto
+	nombre
+	descripcion
+	progresson
+ 	tareas
+	url
+	votos
+agregar
+eliminar
+
+inspiration 
+https://www.v1.aristidebenoist.com/
+https://emanuelemilella.com/works
