@@ -1,0 +1,13 @@
+.load{
+  height: 80%;
+  width: 80%;
+  &--number{
+    font-size: 15rem;
+    margin: 0;
+    line-height: 16rem;
+  }
+  &--text{
+    font-size: 3rem;
+    margin: 0;
+  }
+}

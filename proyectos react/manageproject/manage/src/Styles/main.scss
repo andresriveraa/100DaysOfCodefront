@@ -1,5 +1,10 @@
 @import "App.scss";
+@import "variable.scss";
+@import "load.scss";
 
+*{
+  font-family: $main-font;
+}
 .load>p{
-  color:yellow;
+  color: $main-color;
 }
