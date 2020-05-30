@@ -1,6 +1,8 @@
 import React from 'react';
 import Add from '../components/addproject';       
 
+import { Link } from 'react-router-dom';
+
 class Projects extends React.Component{
   
   constructor(props){
@@ -10,6 +12,9 @@ class Projects extends React.Component{
         projectname:'',
         url: '',
       },
+      forProof: [
+        1, 2, 3,
+      ]
     }
   }
 
@@ -28,6 +33,16 @@ class Projects extends React.Component{
         <Add load="50" addName={this.addName}
         formValues={this.state.form} />
         <p>hello projects page</p>
+        <ul>
+          {this.state.forProof.map((num) => {
+            return(
+              <li>
+                {num}
+              </li>
+            )
+          })}
+        </ul>
+        <Link to="/">load</Link>
       </div>
     )
   }

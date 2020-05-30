@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
+import Layout from './layout'
 // const Element = React.createElement('p', {}, 'hola soy un children');
 class Load extends React.Component {
 
@@ -30,6 +32,10 @@ class Load extends React.Component {
   render() {
     return (
       <div className="load">
+        <Link to="/projects">projects</Link>
+        <Layout>
+          <p>hehllo childrn</p>
+        </Layout>
         <p className="load--text">Cargando proyectos</p>
         <p className="load--number">{this.state.load}%</p>  
         <div className="bar-load">
