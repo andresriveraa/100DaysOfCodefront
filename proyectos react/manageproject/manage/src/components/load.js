@@ -5,28 +5,33 @@ import Layout from './layout'
 // const Element = React.createElement('p', {}, 'hola soy un children');
 class Load extends React.Component {
 
+  // aqui seria el created de vue
   constructor(props) {
     super(props)
     this.state = {
       load : 0,
     }
   }
- 
-
+//  sería el beforemount de vue
   componentDidMount() {
     this.setState({load:this.state.load+15})
-    // setTimeout(() => {
-    //     this.setState({load:this.state.load+20})
-    // }, 1000)
-    // setTimeout(() => {
-    //     this.setState({load:this.state.load+29})
-    // }, 2000)
-    // setTimeout(() => {
-    //     this.setState({load:this.state.load+25})
-    // }, 4000)
-    // setTimeout(() => {
-    //     this.setState({load:this.state.load+10})
-    // }, 5000)
+    setTimeout(() => {
+        this.setState({load:this.state.load+20})
+    }, 1000)
+    setTimeout(() => {
+        this.setState({load:this.state.load+29})
+    }, 2000)
+    setTimeout(() => {
+        this.setState({load:this.state.load+25})
+    }, 4000)
+    setTimeout(() => {
+        this.setState({load:this.state.load+10})
+    }, 5000)
+  }
+
+  // dismount
+  componentWillUnmount(){
+    console.log('dismount');
   }
   
   render() {

@@ -1,5 +1,6 @@
 import React from 'react';
 import Add from '../components/addproject';       
+import ProjectsContainer from '../components/projectContainer';       
 
 import { Link } from 'react-router-dom';
 
@@ -29,21 +30,26 @@ class Projects extends React.Component{
 
   render(){
     return(
-      <div className="projects">      
+      <React.Fragment>      
         <Add load="50" addName={this.addName}
         formValues={this.state.form} />
         <p>hello projects page</p>
         <ul>
           {this.state.forProof.map((num) => {
             return(
-              <li>
+              <li key={num.toString()}>
                 {num}
               </li>
             )
           })}
         </ul>
         <Link to="/">load</Link>
-      </div>
+        <ProjectsContainer 
+        name="Manager Projcts"
+        img="https://images.unsplash.com/photo-1588615419966-0c0f3bb797b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+        description="este es un projecto de prueba"
+        />
+      </React.Fragment>
     )
   }
 }
