@@ -1,0 +1,16 @@
+User Experience
+Se logra con una aplicación que:
+
+Funcione
+Sea rápida
+Cumpla sus necesidades
+Se actualice
+Responda a sus interacciones
+Producto de calidad
+
+Developer Experience
+Escribir aplicaciones de manera eficiente.
+Tener un código limpio.
+Aplicar tecnología para resolver sus problemas.
+Tener un conjunto de reglas y convenciones.
+Entorno de desarrollo optimizado en productividad.

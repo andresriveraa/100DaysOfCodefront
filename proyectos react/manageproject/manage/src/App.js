@@ -4,6 +4,7 @@ import './Styles/main.scss';
 import Load from './components/load';
 import Error from './components/Error';
 import Projects from './pages/projects';
+import metodoFyman from './pages/metodoFyman';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 
@@ -16,9 +17,9 @@ function App() {
         <BrowserRouter>
           <Switch className="rutas">
             <Route exact path="/projects" component={Projects} />
+            <Route exact path="/feyman" component={metodoFyman} />
             <Route exact path="/" component={Load} />
-            <Route component={Error} />
-            
+            <Route component={Error} />            
           </Switch>
         </BrowserRouter>
       </header>
