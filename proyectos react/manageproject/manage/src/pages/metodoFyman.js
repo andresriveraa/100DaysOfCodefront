@@ -9,6 +9,20 @@ class Fyman extends React.Component{
       notes : {},
     }
   }
+
+  componentDidMount(){
+    // para peticiones a API
+  }
+
+  componentDidUpdate(prevProps, prevState){
+    // traer información y actualizar
+  }
+
+  componentWillUnmount(){
+    // antes de que salga de escena el componente
+    // aqui eliminamos las peticiones o setTimeout
+  }
+
   AddTitle = (e) => {
     console.log(e.target.value);    
   }
