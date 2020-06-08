@@ -1,7 +1,15 @@
 import React from 'react';
 import '../index.css';
 
-function App() {
+const App = () => {
+
+  const ponerFilas = () => [
+    <tr>
+      <td>andres</td>
+      <td>andres@gmail.com</td>
+      <td>de aquico</td>
+    </tr>
+  ]
   return (
     <div className="App margen">
       <table className="tabla">
@@ -11,11 +19,7 @@ function App() {
           <th>enlace</th>
         </thead>
         <tbody>
-          <tr>
-            <td>andres</td>
-            <td>andres@gmail.com</td>
-            <td>de aquico</td>
-          </tr>
+          {ponerFilas()}
         </tbody>
       </table>
     </div>
