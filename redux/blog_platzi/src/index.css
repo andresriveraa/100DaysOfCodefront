@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+}
+.margen{
+  margin: 10px;
+}
+.tabla{
+  width: 100%;
+  text-align: left;
+}
