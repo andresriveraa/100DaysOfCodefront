@@ -11,3 +11,14 @@
 .tabla td{
   padding: 10px;
 }
+
+#menu{
+  background-color: #5f5f9a;
+  padding: 20px;
+  font-size: 20px;
+}
+
+#menu a {
+  color: white;
+  padding-right: 50px;
+}
