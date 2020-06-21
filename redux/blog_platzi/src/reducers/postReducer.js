@@ -6,7 +6,7 @@ export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case 'traer_posts':
       return {...state, posts: action.payload}
-      default: return state
+    default: return state
   }
 }
 

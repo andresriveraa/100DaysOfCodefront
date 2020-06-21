@@ -1,9 +1,12 @@
 export const traerPosts = () => async (dispatch) => {
-  let postsResponse = await fetch('https://jsonplaceholder.typicode.com/posts').then((res) => res.json())
-  console.log(postsResponse);
+  try{
+    let postsResponse = await fetch('https://jsonplaceholder.typicode.com/posts').then((res) => res.json())
+    dispatch({
+      type: 'traer_posts',
+      payload: postsResponse
+    })
+  }catch (error) {
+    console.log(error);    
+  }
   
-  dispatch({
-    type: 'traer_posts',
-    payload: postsResponse
-  })
 }
